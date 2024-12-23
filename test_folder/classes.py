@@ -53,16 +53,3 @@ class LRUCache:
                 del self.map[nodeToRemove.val]
                 self._removeNode(nodeToRemove)
         return True
-    
-if __name__ == "__main__":
-    obj = LRUCache(2)
-    obj.add(1)
-    obj.add(2)
-    obj.get(1)
-    obj.add(3)
-    obj.get(2)
-    obj.add(4)
-    obj.get(1)
-    obj.get(3)
-    obj.get(4)
-    
